@@ -7,11 +7,9 @@ Repository: https://mygit.th-deg.de/jz19337/speech-assistant
 
 ## Project description
 
-JobJet is a career service chatbot that helps job seekers find the right job. It is built using Rasa and Python. You can find the structure of the chatbot at https://mygit.th-deg.de/jz19337/speech-assistant/-/wikis/Home. The project structure is as follows: <br>
+JobJet is a robust career service chatbot designed to assist job seekers in finding the perfect job match. Leveraging the power of Rasa and Python, JobJet provides an intuitive and interactive conversational experience for users navigating the complex world of job hunting. In addition to Rasa and Python, Flask is employed to handle essential endpoints, enhancing the functionality and seamless integration of features. <br>
 
-```
-in progress...
-```
+
 JobJet uses Flask to handle various endpoints:
 
 - **Register:**
