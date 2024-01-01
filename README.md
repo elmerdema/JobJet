@@ -47,7 +47,7 @@ Description of the steps after cloning the MyGit repository (setting up a venv, 
 
 1. Clone the repository
 ```
-git clone https://mygit.th-deg.de/jz19337/speech-assistant.git
+git clone https://github.com/elmerdema/JobJet
 ```
 2. Create a virtual environment
 ```bash
