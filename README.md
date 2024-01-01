@@ -75,7 +75,46 @@ rasa run
 
 Example of a typical conversation
 ```
-(TODO: Add example conversation image)
+Hans: I would like to apply for some jobs
+
+
+Deggster: Of course, Hans! What position would you like to apply?
+
+[Deggster checks if the position exists]
+
+Hans: I would like to apply for Web Developer positions
+
+
+[ Deggster retrieves the job postings from Emma]
+
+
+Deggster: Here are some developer job openings I found: Full Stack Developer, Junior Front-End Developer, Back-End Engineer. Would you like to apply for one of the following positions
+
+
+Hans: Yes,I would like to apply for the Full Stack Position
+
+[Deggster applies for the position]
+
+Deggster: The application was successful.
+
+
+
+```
+```
+Use Case 2: Recruiter Wants to Invite Working Students for an Interview
+
+Otto: Hello, Deggster! I'm looking to invite a student for an interview
+
+
+Deggster: Absolutely, Otto! What is the username of your student?
+
+
+Otto: His username is jz1337
+
+[Deggster check if the user exists]
+[Deggster invites the user]
+
+Deggster: The user has been successfully invited
 ```
 
 ## Implementation of the Requests
