@@ -1,0 +1,599 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Hi
+    - Hey
+    - Heya
+    - Hi there
+    - Hello
+    - Helloo
+    - Helloo there
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - Bye
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: thanks
+  examples: |
+    - Thanks
+    - Thank you
+    - Thank you so much
+    - Thanks bot
+    - Thanks for that
+    - cheers
+    - cheers bro
+    - ok thanks!
+- intent: user_wants_to_register
+  examples: |
+    - I want to register
+    - Sign me up
+    - Create a new account
+    - register
+    - registration
+- intent: user_wants_to_login
+  examples: |
+    - I want to login
+    - Sign me in
+    - Let me log in
+    - login
+    - log in
+- intent: user_add_new_jobs
+  examples: |
+    - I want to add new jobs for [Software Engineer](job_category)
+    - Can I add new jobs for [Machine Learning Engineer](job_category)
+    - Add new jobs for [Data Scientist](job_category)
+    - I want to add new jobs for [Web Developer](job_category)
+    - I need to add new jobs for [Data Engineer](job_category)
+    - You need to add new jobs for [AI Engineer](job_category)
+    - Add new jobs in [Data Analyst](job_category)
+- intent: user_gives_username
+  examples: |
+    - My username is [guest](username)
+    - Username is [jhon_doe](username)
+    - My username is [jhonny_depp](username)
+    - My username is [albert_einstein](username)
+    - My username is [elmer_dema](username)
+    - The username is [juled_zaganjori](username)
+    - My username is [david_beckham](username)
+    - My username is [juled](username)
+    - My username is [elmer](username)
+    - My username is [jz19337](username)
+    - My username is [ed01551](username)
+    - My username is [ugarmann](username)
+    - My username is [jack15](username)
+    - My username is [jz19337](username)
+- intent: user_gives_password
+  examples: |
+    - My password is [guest](password)
+    - My password is [Password123](password)
+    - Password is [DontHackMe](password)
+    - My pass is [Qwerty123](password)
+    - The password is [ThisIsMyPassword](password)
+    - This is my password [123FakePassword](password)
+    - My password is [password123](password)
+    - My password is [dont_hack_me](password)
+    - My password is [qwerty123](password)
+    - My password is [this_is_my_password](password)
+    - My password is [123_fake_password](password)
+    - Password is [password_123](password)
+    - Password is [dont_hack_me](password)
+    - Password is [qwerty_123](password)
+    - Password is [this_is_my_password](password)
+    - Password is [123_fake_password](password)
+    - Password is [password123](password)
+    - Password is [Qwerty123](password)
+    - My password is [test123](password)
+    - Password is [python2021](password)
+    - Password is [cranberry](password)
+    - My password is [python2004](password)
+    - My password is [python2003](type)
+    - My password is [python2003](password)
+    - My password is [zebra123](password)
+- intent: user_is_student
+  examples: |
+    - Currently I am a student
+    - I am a student
+    - I am currently a student
+    - I am a student at the moment
+    - Student at the moment
+    - I am a student right now
+    - Right now I am a student
+    - I'm a student right now
+- intent: user_is_job_poster
+  examples: |
+    - I am a job poster
+    - I am currently a job poster
+    - I work as a job poster
+    - I want to post a job
+    - I want to post a job offer
+    - I have a job offer
+- intent: user_is_recruiter
+  examples: |
+    - I am a recruiter
+    - I am currently a recruiter
+    - I work as a recruiter
+    - I want to recruit
+    - I want to recruit a candidate
+    - I want to recruit a new employee
+    - I am looking for a new employee
+    - I am a job recruiter
+    - I'm a recruiter
+- intent: find_candidate
+  examples: |
+    - I want to find {"entity":"id"}
+    - I am looking for A-Z
+- intent: utter_goodbye
+  examples: |
+    - Bye
+    - Goodbye
+    - See you later
+    - Bye bot
+    - Goodbye friend
+    - bye
+    - bye for now
+- intent: user_asks_for_jobs
+  examples: |
+    - I want to view available jobs for [Software Engineer](job_category)
+    - Can I see jobs for [Machine Learning Engineer](job_category)
+    - Show available jobs for [Data Scientist](job_category)
+    - What jobs are available for [Data Engineer](job_category)
+    - Are there any jobs for [AI Engineer](job_category)
+    - Show me jobs for [Data Analyst](job_category)
+    - Could you show me jobs for [Software Developer](job_category)
+    - I want to see jobs for [Web Developer](job_category)
+    - I want to view jobs for [Machine Learning Engineer](job_category)
+- intent: user_apply_job
+  examples: |
+    - I want to apply for [Software Engineer](job_category)
+    - I want to apply for [Machine Learning Engineer](job_category)
+    - I want to apply for [Data Scientist](job_category)
+    - I am applying for [Data Engineer](job_category)
+    - I woud like to apply for [AI Engineer](job_category)
+    - I want to apply for [Data Analyst](job_category)
+    - I want to apply for [Software Developer](job_category)
+    - I want to apply for [Web Developer](job_category)
+    - I want to apply for [Working Student Software Engineer](job_category)
+    - I want to apply for [Internship Software Engineer](job_category)
+- intent: recruiter_view_candidates
+  examples: |
+    - I want to view candidates for [Software Engineer](job_category)
+    - Can I see candidates for [Machine Learning Engineer](job_category)
+    - Show available candidates for [Data Scientist](job_category)
+    - What candidates are available for [Data Engineer](job_category)
+    - Are there any candidates for [AI Engineer](job_category)
+    - Show me candidates for [Data Analyst](job_category)
+    - Could you show me candidates for [Software Developer](job_category)
+    - I want to see candidates for [Web Developer](job_category)
+    - I want to view candidates for [Machine Learning Engineer](job_category)
+- intent: recruiter_invite_candidate
+  examples: |
+    - I want to invite [juled](candidate_username) for [Software Engineer](job_category)
+    - I want to invite [elmer](candidate_username) for [Machine Learning Engineer](job_category)
+    - I want to invite [jz19337](candidate_username) for [Data Scientist](job_category)
+    - I want to invite [ed01551](candidate_username) for [Data Engineer](job_category)
+    - I want to invite [ugarmann](candidate_username) for [AI Engineer](job_category)
+    - I want to invite [jack15](candidate_username) for [Data Analyst](job_category)
+    - I want to invite [elmer_dema](candidate_username) for [Software Developer](job_category)
+    - Invite [albert](candidate_username) for [Software Engineer](job_category)
+- lookup: job_category
+  examples: |
+    - Software Engineer
+    - Machine Learning Engineer
+    - Data Scientist
+    - Data Engineer
+    - AI Engineer
+    - Data Analyst
+    - Software Developer
+    - Web Developer
+    - Working Student Software Engineer
+    - Internship Software Engineer
+    - Front-end Developer
+    - Back-end Developer
+    - Full Stack Developer
+    - Mobile App Developer
+    - Embedded Software Engineer
+    - DevOps Engineer
+    - Cloud Engineer
+    - Systems Engineer
+    - Quality Assurance Engineer
+    - Automation Engineer
+    - Test Engineer
+    - Security Engineer
+    - Network Engineer
+    - UI/UX Designer
+    - Technical Writer
+    - Technical Support Engineer
+    - IT Consultant
+    - Database Administrator
+    - Systems Administrator
+    - Network Administrator
+    - Computer Systems Analyst
+    - Business Intelligence Analyst
+    - Computer and Information Research Scientist
+    - Game Developer
+    - Augmented Reality (AR) Developer
+    - Virtual Reality (VR) Developer
+    - Blockchain Developer
+    - Cryptographer
+    - Cryptocurrency Analyst
+    - Cybersecurity Analyst
+    - Computer Vision Engineer
+    - Natural Language Processing (NLP) Engineer
+    - Robotics Engineer
+    - Control Systems Engineer
+    - Simulation Engineer
+    - Audio Engineer
+    - Graphics Programmer
+    - UI/UX Researcher
+    - Cloud Solutions Architect
+    - Business Systems Analyst
+    - Information Security Analyst
+    - Incident Responder
+    - Malware Analyst
+    - Forensic Analyst
+    - IT Auditor
+    - IT Project Manager
+    - Technical Project Manager
+    - Mobile Game Developer
+    - AR/VR Content Developer
+    - IT Trainer
+    - Data Architect
+    - Integration Engineer
+    - Compiler Engineer
+    - Embedded Systems Developer
+    - Quantum Computing Researcher
+    - FPGA Engineer
+    - Computational Linguist
+    - HPC (High-Performance Computing) Engineer
+    - Technical Evangelist
+    - Systems Integrator
+    - Chatbot Developer
+    - Accessibility Engineer
+    - Ethical Hacker
+    - Open Source Developer
+    - Platform Engineer
+    - API Developer
+    - Middleware Developer
+    - ERP Consultant
+    - E-commerce Developer
+    - Digital Marketing Technologist
+    - Health Informatics Specialist
+    - Bioinformatics Analyst
+    - Computational Biologist
+    - Geospatial Analyst
+    - GIS (Geographic Information Systems) Developer
+    - Enterprise Architect
+    - SAP Consultant
+    - Salesforce Developer
+    - Business Process Analyst
+    - Regulatory Compliance Analyst
+    - Cybersecurity Consultant
+    - Quantum Machine Learning Engineer
+    - Cloud Security Engineer
+    - Robotic Process Automation (RPA) Developer
+    - A/B Testing Analyst
+    - Incident Commander
+    - IT Service Desk Analyst
+    - Cryptocurrency Developer
+    - Smart Contract Developer
+    - Computational Chemist
+    - CAD (Computer-Aided Design) Engineer
+    - Systems Modeler
+    - Microservices Architect
+    - Continuous Integration/Continuous Deployment (CI/CD) Engineer
+    - Data Warehouse Architect
+    - Information Governance Analyst
+    - Game AI Programmer
+    - Human-Robot Interaction Engineer
+    - Systems Software Developer
+    - Biometric Systems Engineer
+    - IT Business Analyst
+    - Virtual Assistant Developer
+    - Edge Computing Engineer
+    - IT Risk Analyst
+    - Data Migration Specialist
+    - NoSQL Database Administrator
+    - Serverless Computing Engineer
+    - Quantum Information Scientist
+    - Computational Physicist
+    - Firmware Engineer
+    - IT Compliance Analyst
+    - IT Procurement Specialist
+    - Mobile UI Designer
+    - Edge AI Developer
+    - Quantum Hardware Engineer
+    - Computational Geologist
+    - Cloud Data Engineer
+    - Holographic Developer
+    - Edge Security Engineer
+    - IT Operations Analyst
+    - ITIL Process Manager
+    - ChatOps Engineer
+    - Conversational AI Developer
+    - Human-Centered Design Engineer
+    - Quantum Software Engineer
+    - Quantum Algorithms Researcher
+    - IT Change Manager
+    - Quantum Cryptography Engineer
+    - Cloud Solutions Engineer
+    - AI Ethics Specialist
+    - IT Sustainability Analyst
+    - Remote Sensing Data Analyst
+    - Blockchain Security Engineer
+    - Digital Twin Engineer
+    - Video Game AI Developer
+    - XR (Extended Reality) Developer
+    - IT Disaster Recovery Specialist
+    - IT Business Continuity Planner
+    - Voice User Interface (VUI) Designer
+    - IT Compliance Manager
+    - GPU Programmer
+    - Edge Analytics Engineer
+    - Quantum Networking Engineer
+    - Bioinformatics Developer
+    - Algorithmic Trading Developer
+    - Cloud Cost Analyst
+    - Conversational UX Designer
+    - IT Vendor Management Analyst
+    - AR/VR UX Designer
+    - IT Infrastructure Architect
+    - IT Procurement Manager
+    - Edge Computing Security Engineer
+    - Quantum Materials Scientist
+    - Quantum Optics Engineer
+    - IT Knowledge Manager
+    - IT Service Catalog Manager
+    - VR Simulation Engineer
+    - IT Service Desk Manager
+    - IT Governance Analyst
+    - IT Asset Management Analyst
+    - Cloud Automation Engineer
+    - Quantum Nanotechnologist
+    - IT Security Training Specialist
+    - Blockchain Integration Engineer
+    - Quantum Electronics Engineer
+    - Edge Computing Solutions Architect
+    - IT Portfolio Manager
+    - IT Security Operations Analyst
+    - AI Infrastructure Engineer
+    - Quantum Control Systems Engineer
+    - Computational Economist
+    - Quantum Error Correction Engineer
+    - Blockchain Project Manager
+    - IT Release Manager
+    - IT Configuration Manager
+    - Edge Computing Data Scientist
+    - Quantum Information Security Analyst
+    - Quantum Communications Engineer
+    - Computational Sociologist
+    - IT Security Awareness Analyst
+    - Blockchain Solutions Architect
+    - IT Collaboration Specialist
+    - Quantum Photonics Engineer
+    - Quantum Processor Design Engineer
+    - IT Data Governance Analyst
+    - Cloud Optimization Engineer
+    - Quantum Robotics Engineer
+    - IT Problem Manager
+    - IT Security Compliance Analyst
+    - Blockchain Developer Advocate
+    - Quantum Software Architect
+    - Quantum Machine Learning Researcher
+    - Edge Computing Software Engineer
+    - IT Service Design Analyst
+    - Cloud Security Operations Analyst
+    - Blockchain Business Analyst
+    - Quantum AI Developer
+    - IT Security Governance Analyst
+    - Quantum Cryogenic Engineer
+    - Edge Computing Network Engineer
+    - IT Service Level Manager
+    - IT Security Strategy Analyst
+    - Blockchain Legal Consultant
+    - Quantum Magnetic Engineer
+    - IT Security Architecture Analyst
+    - Quantum Hardware Architect
+    - Edge Computing UX Designer
+    - Blockchain Marketing Specialist
+    - Quantum Circuit Design Engineer
+    - IT Security Risk Analyst
+    - Quantum Information Theorist
+    - IT Security Incident Responder
+    - Edge Computing Solutions Engineer
+    - Blockchain UX Designer
+    - Quantum Biophysicist
+    - IT Security Threat Analyst
+    - Blockchain Community Manager
+    - Quantum Algorithm Engineer
+    - Edge Computing DevOps Engineer
+    - Blockchain Smart Contracts Auditor
+    - Quantum Mechanical Engineer
+    - IT Security Program Manager
+    - Quantum Error Correction Researcher
+    - Edge Computing Security Analyst
+    - Blockchain Integration Specialist
+    - Quantum Electrical Engineer
+    - IT Security Research Analyst
+    - Blockchain Cryptoeconomics Analyst
+    - Quantum Materials Researcher
+    - IT Security Awareness Specialist
+    - Blockchain Protocol Engineer
+    - Quantum Software Developer
+    - Edge Computing AI Engineer
+    - IT Security Architecture Specialist
+    - Blockchain UI/UX Designer
+    - Quantum Algorithms Developer
+    - IT Security Governance Specialist
+    - Blockchain Full Stack Developer
+    - Quantum Device Engineer
+    - IT Security Strategy Specialist
+    - Blockchain QA Engineer
+    - Quantum Firmware Developer
+    - IT Security Architecture Specialist
+    - Blockchain Compliance Analyst
+    - Quantum Photonics Researcher
+    - IT Security Risk Specialist
+    - Blockchain Infrastructure Engineer
+    - Quantum Control Systems Researcher
+    - IT Security Incident Response Specialist
+    - Blockchain Business Development Manager
+    - Quantum Cryogenic Researcher
+    - IT Security Threat Specialist
+    - Blockchain Marketing Manager
+    - Quantum Mechanical Researcher
+    - IT Security Program Specialist
+    - Blockchain Smart Contracts Developer
+    - Quantum Algorithm Researcher
+    - Edge Computing Security Specialist
+    - Blockchain Integration Manager
+    - Quantum Electrical Researcher
+    - IT Security Research Specialist
+    - Blockchain Cryptoeconomics Researcher
+    - Quantum Materials Specialist
+    - IT Security Awareness Researcher
+    - Blockchain Protocol Researcher
+    - Quantum Software Researcher
+    - Edge Computing AI Specialist
+    - Blockchain UI/UX Researcher
+    - Quantum Algorithms Researcher
+    - IT Security Architecture Researcher
+    - Blockchain Full Stack Researcher
+    - Quantum Device Researcher
+    - IT Security Governance Researcher
+    - Blockchain QA Researcher
+    - Quantum Firmware Researcher
+    - IT Security Strategy Researcher
+    - Blockchain Compliance Researcher
+    - Quantum Photonics Specialist
+    - IT Security Risk Researcher
+    - Blockchain Infrastructure Researcher
+    - Quantum Control Systems Specialist
+    - IT Security Incident Response Researcher
+    - Blockchain Business Development Researcher
+    - Quantum Cryogenic Specialist
+    - IT Security Threat Researcher
+    - Blockchain Marketing Researcher
+    - Quantum Mechanical Specialist
+    - IT Security Program Researcher
+    - Blockchain Smart Contracts Researcher
+    - Quantum Algorithm Specialist
+    - Edge Computing Security Researcher
+    - Blockchain Integration Specialist
+    - Quantum Electrical Specialist
+    - IT Security Research Specialist
+    - Blockchain Cryptoeconomics Specialist
+    - Quantum Materials Researcher
+    - IT Security Awareness Specialist
+- lookup: username
+  examples: |
+    - Jhon Doe
+    - Jhonny Depp
+    - Albert Einstein
+    - jhon_doe
+    - jhonny_depp
+    - albert_einstein
+    - elmer_dema
+    - juled_zaganjori
+    - david_beckham
+    - Wayne Rooney
+    - Cristiano Ronaldo
+    - Lionel Messi
+    - juled
+    - elmer
+    - jz19337
+    - ed01551
+    - ugarmann
+    - jack15
+    - jz19337
+- lookup: password
+  examples: |
+    - Password123
+    - DontHackMe
+    - Qwerty123
+    - ThisIsMyPassword
+    - 123FakePassword
+    - password123
+    - dont_hack_me
+    - qwerty123
+    - this_is_my_password
+    - 123_fake_password
+    - password_123
+    - dont_hack_me
+    - qwerty_123
+    - this_is_my_password
+    - 123_fake_password
+    - password123
+    - Qwerty123
+    - test123
+    - python2021
+    - cranberry
+    - python2004
+    - python2003
+    - python2003
+    - zebra123
+- lookup: candidate_username
+  examples: |
+    - juled
+    - elmer
+    - jz19337
+    - ed01551
+    - ugarmann
+    - jack15
+    - elmer_dema
+    - David Beckham
+    - Wayne Rooney
+    - Cristiano Ronaldo
+    - Lionel Messi
+    - albert
+    - jhon_doe
+    - jhonny_depp
+    - albert_einstein
+    - jhon_doe
+    - jhonny_depp
+    - albert_einstein
+    - elmer_dema
+    - juled_zaganjori
+    - david_beckham
+    - Wayne Rooney
+    - Cristiano Ronaldo
+    - Lionel Messi
+    - anna
+    - olivia_wilde23
+    - j3ff_b3z0s

@@ -1,0 +1,39 @@
+{
+    "juled": {
+        "id": "04d25e40-d7e9-407d-8f6e-c5ed727ce653",
+        "password": "test123",
+        "invitations": [
+            {
+                "recruiter": "jz19337",
+                "job_category": "Data Scientist"
+            },
+            {
+                "recruiter": "elmer",
+                "job_category": "Web Developer"
+            }
+        ],
+        "preferences": [
+            "Data Scientist"
+        ]
+    },
+    "elmer": {
+        "id": "e4806ad2-f16e-4d76-ace9-b194b7d5e4ac",
+        "password": "python2003",
+        "invitations": [],
+        "preferences": [
+            "Web Developer"
+        ]
+    },
+    "jz19337": {
+        "id": "6d3f219e-fdf7-4533-ab63-dade8c24d3c2",
+        "password": "zebra123",
+        "invitations": [],
+        "preferences": []
+    },
+    "guest": {
+        "id": "4aa0db78-39c5-49fb-8f46-f55a088addbe",
+        "password": "guest",
+        "invitations": [],
+        "preferences": []
+    }
+}
